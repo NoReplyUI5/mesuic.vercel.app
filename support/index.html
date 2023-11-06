@@ -90,6 +90,32 @@
         <p>Join our discord server by clicking the button below</p>
         <a href="https://discord.gg/4C4hqRvh2f" class="cta-button">Join Our Discord</a>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+<script>
+    // Disable right-click
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+
+    // Disable shortcuts
+    window.addEventListener('keydown', function (e) {
+      // Disable Ctrl+Shift+I, Ctrl+Shift+J (Chrome Developer Tools)
+      if ((e.ctrlKey && e.shiftKey) && (e.key === 'I' || e.key === 'J')) {
+        e.preventDefault();
+      }
+      // Disable Ctrl+U (View Page Source)
+      if (e.ctrlKey && e.key === 'U') {
+        e.preventDefault();
+      }
+      // Disable Ctrl+Shift+C (Inspect Element)
+      if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+        e.preventDefault();
+      }
+      // Add more shortcut combinations to disable if needed
+    });
+  </script>
 </body>
 </html>
 
