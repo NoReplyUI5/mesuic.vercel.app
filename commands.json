@@ -14,7 +14,7 @@
   },
   {
     "name": "autoplay",
-    "aliases": ["None"],
+    "aliases": ["ap", "lazy-mode"],
     "clientPermissions": [],
     "permissions": ["MANAGE_GUILD"],
     "adminOnly": false,
@@ -42,7 +42,7 @@
   },
   {
     "name": "join",
-    "aliases": ["aja", "connect", "summon"],
+    "aliases": ["connect", "summon", "j"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -55,7 +55,7 @@
   },
   {
     "name": "leave",
-    "aliases": ["nikal", "disconnect", "dc"],
+    "aliases": ["disconnect", "dc"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -98,7 +98,7 @@
   },
   {
     "name": "pause",
-    "aliases": ["ruk"],
+    "aliases": [],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -112,7 +112,7 @@
   },
   {
     "name": "play",
-    "aliases": ["baja", "p"],
+    "aliases": ["p", "mp", "遊ぶ"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -128,7 +128,7 @@
   },
   {
     "name": "replay",
-    "aliases": ["None"],
+    "aliases": [],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -158,7 +158,7 @@
   },
   {
     "name": "resume",
-    "aliases": ["None"],
+    "aliases": [],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -173,7 +173,7 @@
   },
   {
     "name": "shuffle",
-    "aliases": ["None"],
+    "aliases": [],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -218,7 +218,7 @@
   },
   {
     "name": "volume",
-    "aliases": ["v", "vol", "awaj", "awaz", "dhwani"],
+    "aliases": ["v", "vol"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -275,7 +275,7 @@
       "playlist name"
     ],
     "examples": [
-      "playlist-create aayu-songs"
+      "playlist-create mesuic-songs"
     ]
   },
   {
@@ -400,7 +400,7 @@
   },
   {
     "name": "help",
-    "aliases": ["h"],
+    "aliases": ["h", "menu"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -427,7 +427,7 @@
 
   {
     "name": "invite",
-    "aliases": [],
+    "aliases": ["inv", "addme"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -442,7 +442,7 @@
   },
   {
     "name": "ping",
-    "aliases": [],
+    "aliases": ["ms", "latency", "signal", "network"],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
@@ -517,7 +517,7 @@
   
   {
     "name": "channelmix",
-    "aliases": [""],
+    "aliases": [],
     "clientPermissions": [],
     "permissions": [],
     "adminOnly": false,
