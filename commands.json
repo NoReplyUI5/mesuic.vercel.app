@@ -290,7 +290,7 @@
       "playlist name"
     ],
     "examples": [
-      "playlist-details aayu-songs"
+      "playlist-details mesuic-songs"
     ]
   },
   {
@@ -320,7 +320,7 @@
       "playlist name"
     ],
     "examples": [
-      "playlist-play aayu-songs"
+      "playlist-play mesuic-songs"
     ]
   },
   {
@@ -335,7 +335,7 @@
       "playlist name"
     ],
     "examples": [
-      "savecurrent aayu-songs"
+      "savecurrent mesuic-songs"
     ]
   },
   {
@@ -350,7 +350,7 @@
       "playlist name"
     ],
     "examples": [
-      "playlist-satatus aayu-songs"
+      "playlist-satatus mesuic-songs"
     ]
   },
   {
@@ -380,7 +380,7 @@
       "playlist name"
     ],
     "examples": [
-      "playlist-delete aayu-songs"
+      "playlist-delete mesuic-songs"
     ]
   },
   {
