@@ -13,6 +13,22 @@
     ]
   },
   {
+    "name": "prefix",
+    "aliases": ["None"],
+    "clientPermissions": [],
+    "permissions": [],
+    "adminOnly": true,
+    "group": "info",
+    "description": "set new prefix for the guild",
+    "parameters": [
+      "prefix"
+    ],
+    "examples": [
+      "prefix set !",
+      "prefix reset"
+    ]
+  },
+  {
     "name": "autoplay",
     "aliases": ["ap", "lazy-mode"],
     "clientPermissions": [],
