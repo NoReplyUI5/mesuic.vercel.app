@@ -456,6 +456,23 @@
 
 
   },
+
+  {
+    "name": "source-code",
+    "aliases": ["src", "source"],
+    "clientPermissions": [],
+    "permissions": [],
+    "adminOnly": false,
+    "group": "info",
+    "description": "get mesuic's source code",
+    "parameters": [],
+    "examples": [
+      "source-code"
+    ]
+
+
+  },
+  
   {
     "name": "ping",
     "aliases": ["ms", "latency", "signal", "network"],
