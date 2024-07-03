@@ -15,42 +15,23 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(circle, #1a1a1a, #141414);
+            background: linear-gradient(135deg, #0f0f0f, #141414);
             color: #ffffff;
             overflow-x: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #1a1a1a, #333);
-            padding: 40px;
+            background: linear-gradient(135deg, #282828, #1a1a1a);
+            padding: 60px 20px;
             text-align: center;
-            font-size: 3em;
             color: #e91e63;
             border-bottom: 2px solid #e91e63;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            position: relative;
-            overflow: hidden;
         }
 
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(233, 30, 99, 0.2), transparent);
-            transform: translateX(-50%) scale(0);
-            animation: pulse 6s infinite ease-in-out;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: translateX(-50%) scale(0);
-            }
-            50% {
-                transform: translateX(-50%) scale(1);
-            }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
         }
 
         header p {
@@ -60,14 +41,14 @@
         }
 
         main {
-            padding: 40px;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         footer {
-            background: linear-gradient(135deg, #1a1a1a, #333);
+            background: linear-gradient(135deg, #282828, #1a1a1a);
             padding: 20px;
             text-align: center;
             color: #ff80ab;
@@ -79,10 +60,6 @@
         footer p {
             margin: 0;
             font-size: 1em;
-        }
-
-        footer p:hover {
-            color: #ffffff;
         }
 
         footer a {
@@ -103,6 +80,10 @@
             gap: 20px;
             max-width: 1200px;
             margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
         }
 
         .policy-section {
@@ -134,6 +115,29 @@
             line-height: 1.6;
             color: #cccccc;
         }
+
+        .neon-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #ffffff;
+            background: #e91e63;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .neon-button:hover {
+            background: #ff80ab;
+            box-shadow: 0 0 10px #ff80ab, 0 0 20px #ff80ab, 0 0 30px #ff80ab;
+        }
+
+        .neon-text {
+            color: #e91e63;
+            text-shadow: 0 0 5px #e91e63, 0 0 10px #e91e63, 0 0 15px #ff80ab, 0 0 20px #ff80ab;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -161,7 +165,8 @@
 
 <body>
     <header>
-        Mesuic Bot
+        <h1 class="neon-text">Mesuic Bot</h1>
+        <p>The Ultimate Discord Music Bot</p>
     </header>
 
     <main>
@@ -178,7 +183,7 @@
 
             <div class="policy-section">
                 <h2>Data Deletion</h2>
-                <p>If you wish to delete your data or account, please contact us through Discord <a href="https://mesuic.me/support">https://mesuic.me/support</a>. We will promptly process your request and inform you once it's completed.</p>
+                <p>If you wish to delete your data or account, please contact us through Discord <a href="https://mesuic.me/support" class="neon-text">https://mesuic.me/support</a>. We will promptly process your request and inform you once it's completed.</p>
             </div>
 
             <div class="policy-section">
@@ -191,6 +196,7 @@
                 <p>We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction.</p>
             </div>
         </div>
+        <button class="neon-button">Contact Us</button>
     </main>
 
     <footer>
