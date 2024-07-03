@@ -10,15 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://urls.mesuic.me/logo-mesuic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500;700&display=swap">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #141414, #2e2e2e);
+            background: #141414;
             color: #ffffff;
-            overflow-x: hidden;
         }
 
         header {
@@ -27,14 +25,6 @@
             text-align: center;
             font-size: 24px;
             color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 36px;
-            margin: 0;
-            animation: fadeIn 2s ease-in-out;
         }
 
         header p {
@@ -45,97 +35,75 @@
 
         main {
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            animation: slideIn 1s ease-out;
         }
 
         footer {
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-    color: #95a5a6;
-    border-top: 1px solid #2c3e50;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            color: #95a5a6;
+            border-top: 1px solid #2c3e50;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-}
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
 
-footer p:hover {
-    color: #ffffff;
-}
+        footer p:hover {
+            color: #ffffff;
+        }
 
-footer a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-
-        a {
+        footer a {
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
 
-        a:hover {
+        footer a:hover {
+            color: #ffffff;
             text-decoration: underline;
         }
 
         #privacy-policy {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .policy-section {
             background-color: #242424;
             color: #ffffff;
             padding: 20px;
-            margin-top: 10px;
             border-radius: 8px;
+            flex: 1 1 calc(50% - 40px); /* Responsive two-column layout */
+            margin: 10px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
         }
 
-        h2 {
+        .policy-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .policy-section h2 {
             color: #ffffff;
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
 
-        h3 {
+        .policy-section h3 {
             color: #ffffff;
             margin-top: 15px;
         }
 
-        p {
+        .policy-section p {
             line-height: 1.6;
             color: #bdc3c7;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
         }
     </style>
     <script>
@@ -169,20 +137,30 @@ footer a:hover {
 
     <main>
         <div id="privacy-policy">
-            <h2>[1] Information Security:</h2>
-            <p>At Mesuic Bot, we take the security of your data seriously. We implement robust security measures to protect stored user IDs from unauthorized access or misuse.</p>
+            <div class="policy-section">
+                <h2>[1] Information Security:</h2>
+                <p>At Mesuic Bot, we take the security of your data seriously. We implement robust security measures to protect stored user IDs from unauthorized access or misuse.</p>
+            </div>
 
-            <h3>[2] Data Sharing:</h3>
-            <p>We do not share user data with third parties. Your information remains confidential and is solely used to enhance your experience within our bot.</p>
+            <div class="policy-section">
+                <h3>[2] Data Sharing:</h3>
+                <p>We do not share user data with third parties. Your information remains confidential and is solely used to enhance your experience within our bot.</p>
+            </div>
 
-            <h3>[3] Data Deletion:</h3>
-            <p>If you wish to delete your data or account, please contact us through discord [https://mesuic.me/support]. We will promptly process your request and inform you once it's completed.</p>
+            <div class="policy-section">
+                <h3>[3] Data Deletion:</h3>
+                <p>If you wish to delete your data or account, please contact us through discord <a href="https://mesuic.me/support">https://mesuic.me/support</a>. We will promptly process your request and inform you once it's completed.</p>
+            </div>
 
-            <h3>[4] Cookies or Tracking Technologies:</h3>
-            <p>Mesuic Bot does not use cookies or tracking technologies.</p>
+            <div class="policy-section">
+                <h3>[4] Cookies or Tracking Technologies:</h3>
+                <p>Mesuic Bot does not use cookies or tracking technologies.</p>
+            </div>
 
-            <h3>[5] Security Measures:</h3>
-            <p>We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction.</p>
+            <div class="policy-section">
+                <h3>[5] Security Measures:</h3>
+                <p>We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction.</p>
+            </div>
         </div>
     </main>
 
