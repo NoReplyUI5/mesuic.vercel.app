@@ -15,41 +15,47 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: #141414;
+            background: linear-gradient(135deg, #1a1a1a, #141414);
             color: #ffffff;
+            overflow-x: hidden;
         }
 
         header {
-            background-color: #1a1a1a;
-            padding: 20px;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            padding: 40px;
             text-align: center;
-            font-size: 24px;
-            color: #ffffff;
+            font-size: 3em;
+            color: #e91e63;
+            border-bottom: 2px solid #e91e63;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         header p {
-            font-size: 18px;
+            font-size: 1.2em;
             margin-top: 10px;
-            color: #95a5a6;
+            color: #ff80ab;
         }
 
         main {
-            padding: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         footer {
-            background-color: #1a1a1a;
+            background: linear-gradient(135deg, #1a1a1a, #333);
             padding: 20px;
             text-align: center;
-            color: #95a5a6;
-            border-top: 1px solid #2c3e50;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            color: #ff80ab;
+            border-top: 2px solid #e91e63;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
         }
 
         footer p {
             margin: 0;
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 1em;
         }
 
         footer p:hover {
@@ -57,7 +63,7 @@
         }
 
         footer a {
-            color: #3498db;
+            color: #e91e63;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
@@ -72,38 +78,37 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
         }
 
         .policy-section {
-            background-color: #242424;
+            background: rgba(36, 36, 36, 0.9);
             color: #ffffff;
             padding: 20px;
-            border-radius: 8px;
-            flex: 1 1 calc(50% - 40px); /* Responsive two-column layout */
-            margin: 10px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            border-radius: 10px;
+            flex: 1 1 calc(45% - 40px);
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .policy-section:hover {
             transform: translateY(-5px);
+            background: #333;
         }
 
-        .policy-section h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #3498db;
+        .policy-section h2,
+        .policy-section h3 {
+            color: #ff80ab;
+            border-bottom: 2px solid #e91e63;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
 
-        .policy-section h3 {
-            color: #ffffff;
-            margin-top: 15px;
-        }
-
         .policy-section p {
             line-height: 1.6;
-            color: #bdc3c7;
+            color: #cccccc;
         }
     </style>
     <script>
@@ -132,33 +137,34 @@
 
 <body>
     <header>
-        <h1>Mesuic Bot</h1>
+        Mesuic Bot
+        <p>The Ultimate Discord Music Bot</p>
     </header>
 
     <main>
         <div id="privacy-policy">
             <div class="policy-section">
-                <h2>[1] Information Security:</h2>
+                <h2>Information Security</h2>
                 <p>At Mesuic Bot, we take the security of your data seriously. We implement robust security measures to protect stored user IDs from unauthorized access or misuse.</p>
             </div>
 
             <div class="policy-section">
-                <h3>[2] Data Sharing:</h3>
+                <h2>Data Sharing</h2>
                 <p>We do not share user data with third parties. Your information remains confidential and is solely used to enhance your experience within our bot.</p>
             </div>
 
             <div class="policy-section">
-                <h3>[3] Data Deletion:</h3>
-                <p>If you wish to delete your data or account, please contact us through discord <a href="https://mesuic.me/support">https://mesuic.me/support</a>. We will promptly process your request and inform you once it's completed.</p>
+                <h2>Data Deletion</h2>
+                <p>If you wish to delete your data or account, please contact us through Discord <a href="https://mesuic.me/support">https://mesuic.me/support</a>. We will promptly process your request and inform you once it's completed.</p>
             </div>
 
             <div class="policy-section">
-                <h3>[4] Cookies or Tracking Technologies:</h3>
+                <h2>Cookies or Tracking Technologies</h2>
                 <p>Mesuic Bot does not use cookies or tracking technologies.</p>
             </div>
 
             <div class="policy-section">
-                <h3>[5] Security Measures:</h3>
+                <h2>Security Measures</h2>
                 <p>We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction.</p>
             </div>
         </div>
