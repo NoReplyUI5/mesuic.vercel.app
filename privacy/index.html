@@ -15,7 +15,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1a1a1a, #141414);
+            background: radial-gradient(circle, #1a1a1a, #141414);
             color: #ffffff;
             overflow-x: hidden;
         }
@@ -28,6 +28,29 @@
             color: #e91e63;
             border-bottom: 2px solid #e91e63;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(233, 30, 99, 0.2), transparent);
+            transform: translateX(-50%) scale(0);
+            animation: pulse 6s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translateX(-50%) scale(0);
+            }
+            50% {
+                transform: translateX(-50%) scale(1);
+            }
         }
 
         header p {
@@ -90,12 +113,13 @@
             flex: 1 1 calc(45% - 40px);
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .policy-section:hover {
             transform: translateY(-5px);
             background: #333;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
 
         .policy-section h2,
@@ -138,6 +162,7 @@
 <body>
     <header>
         Mesuic Bot
+        <p>The Ultimate Discord Music Bot</p>
     </header>
 
     <main>
