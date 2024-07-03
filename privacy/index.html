@@ -10,13 +10,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://urls.mesuic.me/logo-mesuic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500;700&display=swap">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: #141414;
+            background: linear-gradient(135deg, #141414, #2e2e2e);
             color: #ffffff;
+            overflow-x: hidden;
         }
 
         header {
@@ -25,6 +27,14 @@
             text-align: center;
             font-size: 24px;
             color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 36px;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
         }
 
         header p {
@@ -35,17 +45,21 @@
 
         main {
             padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            animation: slideIn 1s ease-out;
         }
 
         footer {
             background-color: #1a1a1a;
-            padding: 0px;
+            padding: 10px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
             color: #95a5a6;
             border-top: 1px solid #2c3e50;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
         }
 
         a {
@@ -64,6 +78,7 @@
             padding: 20px;
             margin-top: 10px;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
@@ -81,6 +96,26 @@
         p {
             line-height: 1.6;
             color: #bdc3c7;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
     <script>
@@ -112,30 +147,28 @@
         <h1>Mesuic Bot</h1>
     </header>
 
+    <main>
+        <div id="privacy-policy">
+            <h2>[1] Information Security:</h2>
+            <p>At Mesuic Bot, we take the security of your data seriously. We implement robust security measures to protect stored user IDs from unauthorized access or misuse.</p>
+
+            <h3>[2] Data Sharing:</h3>
+            <p>We do not share user data with third parties. Your information remains confidential and is solely used to enhance your experience within our bot.</p>
+
+            <h3>[3] Data Deletion:</h3>
+            <p>If you wish to delete your data or account, please contact us through discord [https://mesuic.me/support]. We will promptly process your request and inform you once it's completed.</p>
+
+            <h3>[4] Cookies or Tracking Technologies:</h3>
+            <p>Mesuic Bot does not use cookies or tracking technologies.</p>
+
+            <h3>[5] Security Measures:</h3>
+            <p>We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction.</p>
+        </div>
+    </main>
+
     <footer>
         <p>&copy; 2024 Mesuic Bot. All rights reserved.</p>
     </footer>
-
-    <div id="privacy-policy">
-        <h2>[1] Information Security:</h2>
-        <p>At Mesuic Bot, we take the security of your data seriously. We implement robust security measures to protect stored user IDs from unauthorized access or misuse.
-</p>
-
-        <h3>[2] Data Sharing:</h3>
-        <p>We do not share user data with third parties. Your information remains confidential and is solely used to enhance your experience within our bot.</p>
-
-        <h3>[3] Data Deletion:</h3>
-        <p>If you wish to delete your data or account, please contact us through discord [https://mesuic.me/support]. We will promptly process your request and inform you once it's completed.</p>
-
-        <h3>[4] Cookies or Tracking Technologies:</h3>
-        <p>Mesuic Bot does not use cookies or tracking technologies.</p>
-
-        <h3>[5] Security Measures:</h3>
-        <p>We employ industry-standard security measures to protect your personal information from unauthorized access,
-            disclosure, alteration, and destruction.</p>
-
-        <h3>‎ ‎ </h3>
-    </div>
 
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
