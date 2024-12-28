@@ -1,21 +1,130 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <meta http-equiv = "refresh" content = "0; url = /home" />
-    <meta property="og:title" content="Mesuic Bot">
-    <meta property="og:description" content="A Discord Music Bot With Many Awesome Features, Support Many Sources. %C%1">
-    <meta property="og:thumbnail" content="https://urls.mesuic.me/logo-mesuic">
-    <meta property="og:image" content="https://urls.mesuic.me/logo-mesuic">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesuic Bot</title>
-  <link rel="icon" type="image/x-icon" href="https://urls.mesuic.me/logo-mesuic">
-  <link rel="stylesheet" href="./style.css">
+<!-- @format -->
 
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="Mesuic Bot - Discord Music Bot" />
+    <meta
+      property="og:description"
+      content="The best music bot for your Discord server. Enjoy high-quality sound and seamless controls. %C%1"
+    />
+    <meta property="og:thumbnail" content="https://mesuic.vercel.app/other/cdn/mlogo.webp" />
+    <meta property="og:image" content="https://mesuic.vercel.app/other/cdn/mlogo.webp" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesuic Bot - Discord Music Bot</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="other/components/styles.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="logo">Mesuic Bot</a>
+        <ul class="nav-links">
+          <li><a href="/other/subpage/privacy/">Privacy</a></li>
+          <li><a href="/other/subpage/terms/">Terms</a></li>
+          <li><a href="/other/subpage/extra/support/">Support</a></li>
+          <li><a href="/other/subpage/extra/invite/">Invite</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1>Mesuic Bot</h1>
+      <p>
+        The best music bot for your Discord server. Enjoy high-quality sound and seamless controls.
+      </p>
+      <a
+        href="https://discord.com/oauth2/authorize?client_id=1157589891287367730"
+        class="cta-btn"
+        >Invite to Discord</a
+      >
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2 class="text-2xl font-bold text-indigo-600">Why Choose Mesuic Bot?</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        Mesuic Bot offers amazing features that will enhance your Discord music experience.
+      </p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="feature-card">
+          <h3>High-Quality Audio</h3>
+          <p>
+            Stream your favorite songs with pristine, high-quality sound directly on your Discord
+            server.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Easy Controls</h3>
+          <p>
+            Manage your music with simple and easy-to-use commands that anyone can learn instantly.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Filters</h3>
+          <p>
+            Enhance your music experience with various filters like bass boost, nightcore, and more!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Mesuic Bot. All rights reserved.</p>
+    </footer>
+
     <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
+      // Hamburger Menu toggle for mobile view
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <script>
+      // Disable right-click
+      window.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      // Disable shortcuts
+      window.addEventListener("keydown", function (e) {
+        // Disable Ctrl+Shift+I, Ctrl+Shift+J (Chrome Developer Tools)
+        if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+          e.preventDefault();
+        }
+        // Disable Ctrl+U (View Page Source)
+        if (e.ctrlKey && e.key === "U") {
+          e.preventDefault();
+        }
+        // Disable Ctrl+Shift+C (Inspect Element)
+        if (e.ctrlKey && e.shiftKey && e.key === "C") {
+          e.preventDefault();
+        }
+        // Add more shortcut combinations to disable if needed
+      });
+    </script>
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
 </html>
